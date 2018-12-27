@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <ion-icon name="md-qr-scanner"></ion-icon>&nbsp;&nbsp;BarcodeScanner
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <button ion-button round block color="secondary" (click)="scan()"><ion-icon name="md-qr-scanner"></ion-icon>&nbsp;&nbsp;Scan</button>
+    
+    <ion-card>
+      <ion-card-header>
+        Barcode Result Format
+      </ion-card-header>
+      <ion-card-content>
+        {{scanFormat}}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Barcode Result Text
+        </ion-card-header>
+        <ion-card-content>
+            {{scanText}}
+        </ion-card-content>
+      </ion-card>
+      
+</ion-content>
